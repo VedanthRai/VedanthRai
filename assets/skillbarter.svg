@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 560" width="100%" role="img" aria-labelledby="t d" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace">
+<title id="t">SkillBarter architecture</title><desc id="d">A user is matched to a skill, creates a transaction, credits are held in escrow, and the escrow ends in release, refund or dispute. Strategy, Observer, Builder and Decorator patterns structure the code.</desc>
+<defs><pattern id="g" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#161616" stroke-width="1"/></pattern></defs><rect width="640" height="560" fill="#0a0a0a"/><rect width="640" height="560" fill="url(#g)"/>
+<path d="M8 22V8H22" stroke="#555" fill="none"/><path d="M618 8H632V22" stroke="#555" fill="none"/><path d="M8 538V552H22" stroke="#555" fill="none"/><path d="M618 552H632V538" stroke="#555" fill="none"/>
+<text x="24" y="38" font-size="12" fill="#8c8c8c" text-anchor="start" font-weight="400" letter-spacing="1">SYSTEM 03 / TIME-BANKING</text>
+<text x="24" y="72" font-size="28" fill="#ffffff" text-anchor="start" font-weight="700" letter-spacing="2">SKILLBARTER</text>
+<text x="24" y="96" font-size="14" fill="#8c8c8c" text-anchor="start" font-weight="400" letter-spacing="0">Skill exchange platform on Spring Boot MVC</text>
+<line x1="24" y1="112" x2="616" y2="112" stroke="#3b3b3b" stroke-width="1"/>
+<rect x="40" y="130" width="250" height="44" fill="#0a0a0a" stroke="#3b3b3b" stroke-width="1"/>
+<text x="165.0" y="149.0" font-size="14" fill="#d9d9d9" text-anchor="middle" font-weight="700" letter-spacing="0">USER</text>
+<text x="165.0" y="167.0" font-size="12" fill="#8c8c8c" text-anchor="middle" font-weight="400" letter-spacing="0">Spring Security · RBAC</text>
+<rect x="40" y="192" width="250" height="44" fill="#0a0a0a" stroke="#3b3b3b" stroke-width="1"/>
+<text x="165.0" y="211.0" font-size="14" fill="#d9d9d9" text-anchor="middle" font-weight="700" letter-spacing="0">SKILL MATCH</text>
+<text x="165.0" y="229.0" font-size="12" fill="#8c8c8c" text-anchor="middle" font-weight="400" letter-spacing="0">skill matching</text>
+<rect x="40" y="254" width="250" height="44" fill="#0a0a0a" stroke="#3b3b3b" stroke-width="1"/>
+<text x="165.0" y="273.0" font-size="14" fill="#d9d9d9" text-anchor="middle" font-weight="700" letter-spacing="0">TRANSACTION</text>
+<text x="165.0" y="291.0" font-size="12" fill="#8c8c8c" text-anchor="middle" font-weight="400" letter-spacing="0">credits</text>
+<rect x="40" y="316" width="250" height="44" fill="#161616" stroke="#ffffff" stroke-width="1.5"/>
+<text x="165.0" y="335.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="700" letter-spacing="0">ESCROW</text>
+<text x="165.0" y="353.0" font-size="12" fill="#8c8c8c" text-anchor="middle" font-weight="400" letter-spacing="0">Spring transactions</text>
+<line x1="165" y1="174" x2="165" y2="192" stroke="#8c8c8c" stroke-width="1.2"/>
+<polygon points="165.0,192.0 162.0,185.7 168.0,185.7" fill="#8c8c8c"/>
+<line x1="165" y1="236" x2="165" y2="254" stroke="#8c8c8c" stroke-width="1.2"/>
+<polygon points="165.0,254.0 162.0,247.7 168.0,247.7" fill="#8c8c8c"/>
+<line x1="165" y1="298" x2="165" y2="316" stroke="#8c8c8c" stroke-width="1.2"/>
+<polygon points="165.0,316.0 162.0,309.7 168.0,309.7" fill="#8c8c8c"/>
+<line x1="290" y1="338" x2="336" y2="338" stroke="#3b3b3b" stroke-width="1"/>
+<line x1="336" y1="321" x2="336" y2="421" stroke="#3b3b3b" stroke-width="1"/>
+<line x1="336" y1="322" x2="360" y2="322" stroke="#3b3b3b" stroke-width="1"/>
+<line x1="360" y1="322" x2="372" y2="322" stroke="#8c8c8c" stroke-width="1.2"/>
+<polygon points="372.0,322.0 365.7,325.0 365.7,319.0" fill="#8c8c8c"/>
+<rect x="372" y="300" width="228" height="44" fill="#0a0a0a" stroke="#3b3b3b" stroke-width="1"/>
+<text x="486.0" y="327.0" font-size="14" fill="#d9d9d9" text-anchor="middle" font-weight="400" letter-spacing="0">RELEASE</text>
+<line x1="336" y1="374" x2="360" y2="374" stroke="#3b3b3b" stroke-width="1"/>
+<line x1="360" y1="374" x2="372" y2="374" stroke="#8c8c8c" stroke-width="1.2"/>
+<polygon points="372.0,374.0 365.7,377.0 365.7,371.0" fill="#8c8c8c"/>
+<rect x="372" y="352" width="228" height="44" fill="#0a0a0a" stroke="#3b3b3b" stroke-width="1"/>
+<text x="486.0" y="379.0" font-size="14" fill="#d9d9d9" text-anchor="middle" font-weight="400" letter-spacing="0">REFUND</text>
+<line x1="336" y1="426" x2="360" y2="426" stroke="#3b3b3b" stroke-width="1"/>
+<line x1="360" y1="426" x2="372" y2="426" stroke="#8c8c8c" stroke-width="1.2"/>
+<polygon points="372.0,426.0 365.7,429.0 365.7,423.0" fill="#8c8c8c"/>
+<rect x="372" y="404" width="228" height="44" fill="#0a0a0a" stroke="#3b3b3b" stroke-width="1"/>
+<text x="486.0" y="431.0" font-size="14" fill="#d9d9d9" text-anchor="middle" font-weight="400" letter-spacing="0">DISPUTE</text>
+<text x="372" y="292" font-size="12" fill="#8c8c8c" text-anchor="start" font-weight="400" letter-spacing="1">STATE TRANSITIONS</text>
+<text x="24" y="480" font-size="12" fill="#8c8c8c" text-anchor="start" font-weight="400" letter-spacing="1">PATTERNS</text>
+<rect x="24" y="492" width="140" height="30" fill="#0a0a0a" stroke="#3b3b3b" stroke-width="1"/>
+<text x="94.0" y="512.0" font-size="14" fill="#d9d9d9" text-anchor="middle" font-weight="400" letter-spacing="0">STRATEGY</text>
+<rect x="176" y="492" width="140" height="30" fill="#0a0a0a" stroke="#3b3b3b" stroke-width="1"/>
+<text x="246.0" y="512.0" font-size="14" fill="#d9d9d9" text-anchor="middle" font-weight="400" letter-spacing="0">OBSERVER</text>
+<rect x="328" y="492" width="140" height="30" fill="#0a0a0a" stroke="#3b3b3b" stroke-width="1"/>
+<text x="398.0" y="512.0" font-size="14" fill="#d9d9d9" text-anchor="middle" font-weight="400" letter-spacing="0">BUILDER</text>
+<rect x="480" y="492" width="140" height="30" fill="#0a0a0a" stroke="#3b3b3b" stroke-width="1"/>
+<text x="550.0" y="512.0" font-size="14" fill="#d9d9d9" text-anchor="middle" font-weight="400" letter-spacing="0">DECORATOR</text>
+</svg>
